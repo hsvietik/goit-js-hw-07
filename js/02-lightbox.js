@@ -1,6 +1,6 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
-const gallery = document.querySelector(".gallery");
+const gallery2 = document.querySelector(".gallery");
 const markup = galleryItems
   .map(
     ({ preview, original, description }) => `<li class="gallery__item">
@@ -10,7 +10,7 @@ const markup = galleryItems
 </li>`
   )
   .join("");
-gallery.insertAdjacentHTML("beforeend", markup);
+gallery2.insertAdjacentHTML("beforeend", markup);
 var lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
