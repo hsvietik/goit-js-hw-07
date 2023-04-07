@@ -26,8 +26,7 @@ function picturePreview(evt) {
     const instance = basicLightbox.create(`
   <div class="modal">
   <img class="gallery__image" src=${evt.target.dataset.source} alt="${evt.target.alt}">
-  </div>
-`);
+  </div>`);
     instance.visible() ? instance.close() : instance.show();
     document.addEventListener("keydown", (evt) => {
       if (evt.code === "Escape") {
